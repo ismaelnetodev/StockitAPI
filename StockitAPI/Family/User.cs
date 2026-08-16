@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity;
 
-namespace StockitAPI.Models;
+namespace StockitAPI.Family;
 
     public class User
     {
@@ -13,6 +13,8 @@ namespace StockitAPI.Models;
         public User(string name)
         {
             UserId = Guid.NewGuid();
+            Rename(name);
+            IsActive = true;
         }
 
         public void Rename(string name)
