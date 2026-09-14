@@ -10,6 +10,7 @@
         public DateTime UpdatedAt { get; private set; } = DateTime.UtcNow;
         public bool IsActive { get; private set; } = true;
 
+        private Family(){}
         public Family(string name, Guid userId)
         {
             FamilyId = Guid.NewGuid();

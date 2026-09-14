@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity;
 
-namespace StockitAPI.Family;
+namespace StockitAPI.User;
 
     public class User
     {
